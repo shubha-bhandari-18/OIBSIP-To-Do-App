@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do Web App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>My To-Do List</h1>
+            <p>Organize your daily tasks</p>
+        </header>
+
+
+        <form id="taskForm">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a task..."
+                autocomplete="off"
+            >
+
+            <button type="submit">
+                Add Task
+            </button>
+
+        </form>
+
+
+        <main class="task-container">
+
+            <!-- PENDING -->
+
+            <section class="task-section">
+
+                <div class="section-heading">
+
+                    <h2>Pending Tasks</h2>
+
+                    <span id="pendingCount">
+                        0 pending
+                    </span>
+
+                </div>
+
+                <ul id="pendingList"></ul>
+
+                <p
+                    id="pendingEmpty"
+                    class="empty-message">
+                    No pending tasks. Great job!
+                </p>
+
+            </section>
+
+
+            <!-- COMPLETED -->
+
+            <section class="task-section">
+
+                <div class="section-heading">
+
+                    <h2>Completed Tasks</h2>
+
+                    <span id="completedCount">
+                        0 completed
+                    </span>
+
+                </div>
+
+                <ul id="completedList"></ul>
+
+                <p
+                    id="completedEmpty"
+                    class="empty-message">
+                    No completed tasks yet.
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
